@@ -6,21 +6,22 @@ Celem projektu było stworzenie aplikacji webowej wspomagającej pracę bibliote
 - Wypożyczanie zasobów przez użytkowników końcowych
 
 ## Stos technologiczny
-- Java 8 + Spring Boot - Warstwa backend
-- Vue.js - Warstwa frontend
-- MySQL - relacyjny system do zarządzania bazą danych Northwind
-- Hibernate - framework do mapowania obiektowo-relacyjnego (ORM)
+- **Java 8 + Spring Boot** - Warstwa backend
+- **Vue.js** - Warstwa frontend
+- **MySQL** - relacyjny system do zarządzania bazą danych Northwind
+- **Hibernate** - framework do mapowania obiektowo-relacyjnego (ORM)
 
-Warstwa backend została oparta na stylu architektonicznym REST. 
+<img width="400" alt="Screenshot 2021-08-18 at 01 29 11" src="https://user-images.githubusercontent.com/34041060/129813625-8bfd5643-ada6-4186-80c3-0ec9088d117b.png">
 
-Komunikacja pomiędzy klientem i serwerem odbywa się za pomocą protokołu HTTP, który jednoznacznie określa zasady wymiany informacji oraz współpracy.
 
-Jako forma autoryzacji oraz autentykacji wybrany został mechanizm JWT:
+**Styl architektoniczny REST** - oparta o niego została warstwa backend.
+
+**Protokół HTTP** - zapewnia komunikację pomiędzy klientem i serwerem, jednoznacznie określa zasady wymiany informacji oraz współpracy.
+
+**Mechanizm JWT** - forma autoryzacji oraz autentyfikacji.
 - Użytkownik na samym początku wysyła żądanie HTTP typu POST, zawierające jego login oraz hasło
 - Gdy serwer stwierdza, że dane są poprawne, generuje oraz wysyła z żeton JWT, który zawiera zakodowaną rolę użytkownika
 - Klient zapisuje zwrócony token i przy każdym żądaniu dołącza go do nagłówka Authorization
-
-<img width="400" alt="Screenshot 2021-08-18 at 01 29 11" src="https://user-images.githubusercontent.com/34041060/129813625-8bfd5643-ada6-4186-80c3-0ec9088d117b.png">
 
 ## Opis aplikacji i funkcji
 ### Role użytkowników w systemie
@@ -52,6 +53,30 @@ Oparta na modelu relacyjnym - wykorzystanie możliwości mapowania obiektowo rel
 - Rejestracja użytkownika
 - Automatyczne wysyłanie powiadomień na maila o rozpoczęciu i zakończeniu rezerwacji
 - Dostęp do zawartości strony w zależności od uprawnień
+
+## Uruchomienie aplikacji
+### Baza danych
+Konfiguracja bazy danych z pliku application.properties:
+<img width="822" alt="Screenshot 2021-08-21 at 11 59 23" src="https://user-images.githubusercontent.com/34041060/130318316-4d60f6a2-c512-462a-936f-e5839c38673b.png">
+- **Nazwa bazy danych** - db_librario
+- **Nazwa użytkownika** - springuser
+- **Hasło użytkownika** - Password
+
+### Backend
+http://localhost:8081
+
+### Frotnend
+`npm install` - ściągnięcie wszystkich potrzebnych paczek (node_modules), które są zdefiniowane w package.json.
+
+`npm start` - uruchomienie aplikacji, które zwraca pod jakim adresem można otworzyć lokalny projekt.
+
+https://localhost:9000
+
+
+
+
+
+
 
 
 
