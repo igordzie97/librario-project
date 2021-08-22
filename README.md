@@ -8,7 +8,7 @@ Celem projektu było stworzenie aplikacji webowej wspomagającej pracę bibliote
 ## Stos technologiczny
 - **Java 8 + Spring Boot** - Warstwa backend
 - **Vue.js** - Warstwa frontend
-- **MySQL** - relacyjny system do zarządzania bazą danych Northwind
+- **MySQL** - relacyjny system do zarządzania bazą danych
 - **Hibernate** - framework do mapowania obiektowo-relacyjnego (ORM)
 
 <img width="400" alt="Screenshot 2021-08-18 at 01 29 11" src="https://user-images.githubusercontent.com/34041060/129813625-8bfd5643-ada6-4186-80c3-0ec9088d117b.png">
