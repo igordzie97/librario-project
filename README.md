@@ -22,7 +22,7 @@ Celem projektu było stworzenie aplikacji webowej wspomagającej pracę bibliote
 - Gdy serwer stwierdza, że dane są poprawne, generuje oraz wysyła z żeton JWT, który zawiera zakodowaną rolę użytkownika
 - Klient zapisuje zwrócony token i przy każdym żądaniu dołącza go do nagłówka Authorization
 
-**Biblioteka komponentów** - Element plus https://element-plus.org/#/en-US
+**Biblioteka komponentów warstwy frontend** - Element plus https://element-plus.org/#/en-US
 
 ## Opis aplikacji i funkcji
 ### Role użytkowników w systemie
