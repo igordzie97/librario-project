@@ -13,7 +13,6 @@ Celem projektu było stworzenie aplikacji webowej wspomagającej pracę bibliote
 
 <img width="400" alt="Screenshot 2021-08-18 at 01 29 11" src="https://user-images.githubusercontent.com/34041060/129813625-8bfd5643-ada6-4186-80c3-0ec9088d117b.png">
 
-
 **Styl architektoniczny REST** - oparta o niego została warstwa backend.
 
 **Protokół HTTP** - zapewnia komunikację pomiędzy klientem i serwerem, jednoznacznie określa zasady wymiany informacji oraz współpracy.
@@ -22,6 +21,8 @@ Celem projektu było stworzenie aplikacji webowej wspomagającej pracę bibliote
 - Użytkownik na samym początku wysyła żądanie HTTP typu POST, zawierające jego login oraz hasło
 - Gdy serwer stwierdza, że dane są poprawne, generuje oraz wysyła z żeton JWT, który zawiera zakodowaną rolę użytkownika
 - Klient zapisuje zwrócony token i przy każdym żądaniu dołącza go do nagłówka Authorization
+
+**Biblioteka komponentów** - Element plus https://element-plus.org/#/en-US
 
 ## Opis aplikacji i funkcji
 ### Role użytkowników w systemie
