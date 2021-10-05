@@ -7,7 +7,7 @@
   - [Database](#database)
   - [Frontend](frontend)
 3. [Implemented functionalities](lista-zaimplementowanych-funkcjonalności)
-4. [Documentation](#dokumentacja)
+4. [Documentation](#documentation)
 
 ## Description
 The project puropse was to create a web app which will support library activities, for example:
@@ -35,45 +35,57 @@ JWT mechanism is used for authorization and autentification:
 **Address:** http://localhost:8081
 
 ## Database
-MySQL database configuration is included in configuration file which is supported by Spring Boot - `application.properties`:
+Dependencies from pom.xml:
+```xml
+<dependency>
+  <groupId>mysql</groupId>
+  <artifactId>mysql-connector-java</artifactId>
+  <scope>runtime</scope>
+</dependency>
+```
 
-<img width="1000" alt="Screenshot 2021-08-21 at 11 59 23" src="https://user-images.githubusercontent.com/34041060/130318316-4d60f6a2-c512-462a-936f-e5839c38673b.png">
+MySQL database configuration is included in configuration file which is supported by Spring Boot - `application.properties`:
+```properties
+server.port = 8081
+
+# database configuration
+spring.jpa.hibernate.ddl-auto=update
+spring.datasource.url=jdbc:mysql://${MYSQL_HOST:localhost}:3306/db_librario?serverTimezone=UTC
+spring.datasource.username=springuser
+spring.datasource.password=Password
+```
 
 ## Frontend
-Axios library is used for communication with server - as HTTP client, unambiguously defines the way of information exchange.
+Axios library is used for communication with server - as a HTTP client, unambiguously defines the way of information exchange.
 
-W aspekcie wizualnym została wykorzystana bilbioteka komponentów dla Vue.js w wersji 2, Element: 
-- https://element.eleme.io/#/en-US
+From UI perspective - it is used one of the most common components library for Vue.js, [Element (version 2.0)](https://element.eleme.io/#/en-US).
 
-Jako menadżer pakietów została wykorzystana oficjalna propozycja od twórców Node.js - Npm.
+### Start up
+`npm install` - installing all modules which are defined in package.json
 
-### Uruchomienie
-`npm install` - ściągnięcie wszystkich potrzebnych paczek (node_modules), które są zdefiniowane w package.json.
+`npm start` - launching the application (returns what is the local address)
 
-`npm start` - uruchomienie aplikacji, które zwraca pod jakim adresem można otworzyć lokalny projekt.
+**Address:** https://localhost:9000
 
-### Adres
-- https://localhost:9000
+## Implemented functionalities
+- Import/export book database
+- CRUD operations on employee database
+- CRUD operations on books database
+- CRUD operations on authors database
+- Users and their reservations preview
+- Curret account data preview
+- Books availability preview
+- User registration
+- Automatic e-mail notifications about starting and ending reservation
+- Access to content depending on permissions
 
-## Lista zaimplementowanych funkcjonalności
-- Import/eksport bazy książek
-- Operacje CRUD na bazie pracowników
-- Operacje CRUD na bazie książek
-- Operacje CRUD na bazie autorów
-- Podgląd użytkowników i ich rezerwacji
-- Podgląd danych obecnego konta
-- Podgląd rezerwacji i możliwość usunięcia
-- Podgląd dostępnych książek
-- Rejestracja użytkownika
-- Automatyczne wysyłanie powiadomień na maila o rozpoczęciu i zakończeniu rezerwacji
-- Dostęp do zawartości strony w zależności od uprawnień
+## Documentation
+Full documentation in Polish:
+- [Vision](https://github.com/igordzie97/librario-project/blob/main/documentation/Wizja.pdf)
+- [Requirements](https://github.com/igordzie97/librario-project/blob/main/documentation/Wymagania.pdf)
+- [Architecture](https://github.com/igordzie97/librario-project/blob/main/documentation/Architektura.pdf)
 
-## Dokumentacja
-- [Wizja](https://github.com/igordzie97/librario-project/blob/main/documentation/Wizja.pdf)
-- [Wymagania](https://github.com/igordzie97/librario-project/blob/main/documentation/Wymagania.pdf)
-- [Architektura](https://github.com/igordzie97/librario-project/blob/main/documentation/Architektura.pdf)
-
-## Autorzy
+## Authors
 - Igor Dzierwa
 - Adrian Nędza
 - Konrad Makuch
