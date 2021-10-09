@@ -34,7 +34,7 @@ JWT mechanism is used for authorization and autentification:
 - Client saves the token and attaches it in every request as Authorization header
 
 ## Database
-Dependencies from pom.xml:
+Dependencies from `pom.xml` file:
 ```xml
 <dependency>
   <groupId>mysql</groupId>
@@ -59,7 +59,7 @@ Axios library is used for communication with server - as a HTTP client, unambigu
 
 From UI perspective - it is used one of the most common components library for Vue.js 2.0, [Element](https://element.eleme.io/#/en-US).
 
-### Start up
+### Setting up
 `npm install` - installing all modules which are defined in package.json
 
 `npm start` - launching the application (returns what is the local address)
@@ -82,9 +82,9 @@ From UI perspective - it is used one of the most common components library for V
 
 ## Documentation
 Full documentation in Polish:
-- [Vision](https://github.com/igordzie97/librario-project/blob/main/documentation/Wizja.pdf)
-- [Requirements](https://github.com/igordzie97/librario-project/blob/main/documentation/Wymagania.pdf)
-- [Architecture](https://github.com/igordzie97/librario-project/blob/main/documentation/Architektura.pdf)
+- [Vision](https://github.com/igordzie97/librario-project/blob/main/documentation/doc-vision.pdf)
+- [Requirements](https://github.com/igordzie97/librario-project/blob/main/documentation/doc-requirements.pdf)
+- [Architecture](https://github.com/igordzie97/librario-project/blob/main/documentation/doc-architecture.pdf)
 
 ## Authors
 - Igor Dzierwa
