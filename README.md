@@ -58,7 +58,7 @@ spring.datasource.password=Password
 ## Frontend
 Axios library is used for communication with server - as a HTTP client, unambiguously defines the way of information exchange.
 
-From UI perspective - it is used one of the most common components library for Vue.js, [Element (version 2.0)](https://element.eleme.io/#/en-US).
+From UI perspective - it is used one of the most common components library for Vue.js 2.0, [Element](https://element.eleme.io/#/en-US).
 
 ### Start up
 `npm install` - installing all modules which are defined in package.json
