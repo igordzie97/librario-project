@@ -77,8 +77,8 @@ From UI perspective - it is used one of the most common components library for V
 - Access to content depending on permissions
 
 ## Addresses
-**Backend:** http://localhost:8081
-**Frontend:** https://localhost:9000
+- **Backend:** http://localhost:8081
+- **Frontend:** https://localhost:9000
 
 ## Documentation
 Full documentation in Polish:
