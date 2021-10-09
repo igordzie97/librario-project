@@ -2,19 +2,20 @@
 
 ## Table of Consents
 1. [Description](#description)
-2. [Technologies and system architecture](technologie-i-architektura)
+2. [Technologies and system architecture](#technologies-and-system-architecture)
   - [Backend](#backend)
   - [Database](#database)
-  - [Frontend](frontend)
-3. [Implemented functionalities](lista-zaimplementowanych-funkcjonalności)
-4. [Documentation](#documentation)
+  - [Frontend](#frontend)
+3. [Implemented functionalities](#implemented-functionalities)
+4. [Addresses](#addresses)
+5. [Documentation](#documentation)
 
 ## Description
 The project puropse was to create a web app which will support library activities, for example:
-- employee management
-- users management - registration, login, account edition
-- sources management - authors and books
-- borrowing books by end-users.
+- Employee management
+- Users management - registration, login, account edition
+- Sources management - authors and books
+- Borrowing books by end-users.
 
 ## Technologies and system architecture
 - **Java 8 and Spring Boot** - Backend
@@ -31,8 +32,6 @@ JWT mechanism is used for authorization and autentification:
 - At the begining client sends HTTP request (POST) with login and password
 - If credentials are correct - server generates JWT token with encoded user role and sends it to the client
 - Client saves the token and attaches it in every request as Authorization header
-
-**Address:** http://localhost:8081
 
 ## Database
 Dependencies from pom.xml:
@@ -65,8 +64,6 @@ From UI perspective - it is used one of the most common components library for V
 
 `npm start` - launching the application (returns what is the local address)
 
-**Address:** https://localhost:9000
-
 ## Implemented functionalities
 - Import/export book database
 - CRUD operations on employee database
@@ -78,6 +75,10 @@ From UI perspective - it is used one of the most common components library for V
 - User registration
 - Automatic e-mail notifications about starting and ending reservation
 - Access to content depending on permissions
+
+## Addresses
+**Backend:** http://localhost:8081
+**Frontend:** https://localhost:9000
 
 ## Documentation
 Full documentation in Polish:
