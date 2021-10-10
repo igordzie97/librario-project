@@ -11,7 +11,7 @@
 5. [Documentation](#documentation)
 
 ## Description
-The project puropse was to create a web app which will support library activities, for example:
+The project puropse is to create a web app which will support library activities, for example:
 - Employee management
 - Users management - registration, login, account edition
 - Sources management - authors and books
